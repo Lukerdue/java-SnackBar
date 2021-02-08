@@ -6,10 +6,10 @@ public class Snack
     private int id;
     private String name;
     private int quantity;
-    private float price;
+    private double price;
     private int vendingId;
 
-    public Snack(String name, int quanity, float price, int vendingId)
+    public Snack(String name, int quanity, double price, int vendingId)
     {
         maxId++;
         id = maxId;
@@ -41,12 +41,12 @@ public class Snack
         return quantity;
     }
 
-    public float getPrice()
+    public double getPrice()
     {
         return price;
     }
 
-    public void setPrice(float price)
+    public void setPrice(double price)
     {
         this.price = price;   
     }
@@ -73,7 +73,7 @@ public class Snack
         quantity = quantity - qty;
     }
 
-    public float getCost(int qty)
+    public double getCost(int qty)
     {
         return price * qty;
     }
