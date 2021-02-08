@@ -42,4 +42,8 @@ public class Customer
     {
         wallet = wallet - price;
     }
+    public void addCash(double cash)
+    {
+        wallet = wallet + cash;
+    }
 }
